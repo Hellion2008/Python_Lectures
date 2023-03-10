@@ -11,5 +11,6 @@ class1 = int(input("Enter first class: "))
 class2 = int(input("Enter second class: "))
 class3 = int(input("Enter third class: "))
 # table = math.ceil(class1 / 2) + math.ceil(class2 / 2) + math.ceil(class3 / 2)
-table = (class1 + 2 - 1) // 2 + (class2 + 2 - 1) // 2 + (class3 + 2 - 1) // 2
+# table = (class1 + 2 - 1) // 2 + (class2 + 2 - 1) // 2 + (class3 + 2 - 1) // 2
+table = (class1 + class1 % 2 + class2 + class2 % 2 + class3 + class3 % 2) // 2
 print(table)
